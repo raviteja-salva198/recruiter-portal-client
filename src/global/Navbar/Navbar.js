@@ -13,9 +13,6 @@ function Navbar() {
     <NavContainer isOpen={isOpen}>
       <TopSection>
         <Logo isOpen={isOpen}>{isOpen ? 'RecruiterPortal' : 'RP'}</Logo>
-        <ToggleButton onClick={toggleNavbar} isOpen={isOpen}>
-          <StyledIcon as={isOpen ? ChevronLeft : Menu} />
-       </ToggleButton>
       </TopSection>
       <NavList>
         <NavItem>
@@ -49,3 +46,11 @@ function Navbar() {
 
 export default Navbar;
 
+
+/*
+
+<ToggleButton onClick={toggleNavbar} isOpen={isOpen}>
+    <StyledIcon as={isOpen ? ChevronLeft : Menu} />
+</ToggleButton>
+
+*/
