@@ -3,7 +3,7 @@ import axios from "axios";
 //http://localhost:5000
 const API_URL = "https://job-posting-management.onrender.com";
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: API_URL,
   headers: {
     "Content-Type": "application/json",
